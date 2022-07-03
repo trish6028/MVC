@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" styleClass="edge-button" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <left>
+      <AnchorPane fx:id="sidepaneContext" prefHeight="200.0" prefWidth="200.0" stylesheets="@../styles/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutY="68.0" prefHeight="54.0" prefWidth="217.0" text="                DashBoard" textFill="#d3b418">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="27.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-dashboard-50.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="17.0" layoutY="229.0" prefHeight="48.0" prefWidth="204.0" text="Pet" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="39.0" fitWidth="35.0" layoutX="28.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-dog-80.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="356.0" prefHeight="50.0" prefWidth="233.0" text="            Pet Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="34.0" layoutY="369.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-health-report-64.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="425.0" prefHeight="39.0" prefWidth="216.0" text="             Medicine" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="32.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-medicine-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="15.0" layoutY="486.0" prefHeight="45.0" prefWidth="225.0" text="                   Bill" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="33.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-bill-60.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="-1.0" prefHeight="57.0" prefWidth="243.0" style="-fx-background-color: #7ed6df;" stylesheets="@../styles/style.css" text="   Pet Care">
+               <font>
+                  <Font name="Snap ITC" size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-clinic-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="33.0" layoutX="25.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="35.0" fitWidth="53.0" layoutX="35.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-pet-50.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblDate" layoutX="32.0" layoutY="758.0" prefHeight="42.0" prefWidth="181.0" text=" ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label fx:id="lbltime" layoutX="57.0" layoutY="734.0" prefHeight="31.0" prefWidth="141.0" text=" ">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <ImageView fitHeight="33.0" fitWidth="34.0" layoutX="36.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-shutdown-48.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="1.0" layoutY="655.0" prefHeight="38.0" prefWidth="231.0" text="                 Exit" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDashBoard" layoutX="10.0" layoutY="71.0" mnemonicParsing="false" onAction="#btnDashBoard" opacity="0.0" prefHeight="49.0" prefWidth="212.0" stylesheets="@../styles/style.css" text="Button" />
+            <Label alignment="CENTER" layoutX="18.0" layoutY="168.0" prefHeight="47.0" prefWidth="207.0" text="         Pet Owner" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="2.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnpetowner" opacity="0.0" prefHeight="50.0" prefWidth="229.0" text="Button" />
+            <JFXButton layoutX="4.0" layoutY="233.0" onAction="#btnPet" prefHeight="48.0" prefWidth="219.0" styleClass="edge-button" stylesheets="@../styles/style.css" text=" " />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="294.0" prefHeight="49.0" prefWidth="212.0" text="                  Appointment" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="30.0" layoutX="33.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-medical-appointment-64.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="9.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnAppointment" opacity="0.0" prefHeight="50.0" prefWidth="220.0" text="Button" />
+            <Button layoutX="8.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnPetReport" opacity="0.0" prefHeight="47.0" prefWidth="226.0" text="Button" />
+            <Label alignment="CENTER" layoutX="-5.0" layoutY="556.0" prefHeight="41.0" prefWidth="247.0" text="     Doctor" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="31.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-doctor-64.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="552.0" mnemonicParsing="false" onAction="#btnDoctor" opacity="0.0" prefHeight="49.0" prefWidth="241.0" styleClass="btnSide" stylesheets="@../styles/style.css" text=" " />
+            <Label layoutX="-4.0" layoutY="120.0" prefHeight="40.0" prefWidth="237.0" text="                          User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="26.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-user-80.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="4.0" layoutY="125.0" mnemonicParsing="false" onAction="#btnUser" opacity="0.0" prefHeight="36.0" prefWidth="237.0" text=" " />
+            <Button layoutX="15.0" layoutY="425.0" mnemonicParsing="false" onAction="#btnMedicine" opacity="0.0" prefHeight="52.0" prefWidth="224.0" text="Button" />
+            <Button layoutX="14.0" layoutY="487.0" mnemonicParsing="false" onAction="#btnbill" opacity="0.0" prefHeight="44.0" prefWidth="227.0" />
+            <JFXButton layoutX="6.0" layoutY="642.0" onAction="#btnExit" prefHeight="36.0" prefWidth="233.0" text=" ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="69.0" layoutY="621.0" opacity="0.0" prefHeight="21.0" prefWidth="170.0" text="Treatment" />
+            <Button layoutX="47.0" layoutY="616.0" mnemonicParsing="false" onAction="#btnTreat" opacity="0.04" prefHeight="31.0" prefWidth="171.0" text="Button" />
+         </children>
+         <styleClass>
+            <String fx:value="linear-grad" />
+            <String fx:value="edgez-button" />
+         </styleClass>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="loadFormContext" prefHeight="800.0" prefWidth="1067.0" styleClass="edge-button" stylesheets="@../styles/style.css" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

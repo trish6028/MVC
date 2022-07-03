@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserFormController">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="1067.0" styleClass="linear-Colour" stylesheets="@../styles/style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="210.0" layoutY="-2.0" prefHeight="68.0" prefWidth="588.0" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXTextField layoutX="32.0" layoutY="96.0" prefHeight="31.0" prefWidth="252.0" promptText="User Id" />
+      <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="25.0" layoutY="135.0" prefHeight="246.0" prefWidth="250.0" text="User Id : C001&#10;&#10;Full Name : Trishan Priya sachin&#10;&#10;Email : trishan@gmail.com&#10;&#10;Gen : Male&#10;&#10;Date Of Birth : 29.11.2000&#10;&#10;Status : Active&#10;&#10;&#10;" />
+      <TableView layoutX="17.0" layoutY="537.0" prefHeight="248.0" prefWidth="1036.0" stylesheets="@../styles/Table.css">
+        <columns>
+          <TableColumn prefWidth="104.18060302734375" text="User Id" />
+          <TableColumn prefWidth="185.18064880371094" text="Name" />
+            <TableColumn prefWidth="254.6414794921875" text="Email" />
+            <TableColumn prefWidth="129.88787841796875" text="Gen" />
+            <TableColumn prefWidth="163.5950927734375" text="Date Of Birth" />
+            <TableColumn prefWidth="195.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="660.0" layoutY="125.0" prefHeight="21.0" prefWidth="75.0" text="User Id" />
+      <Label fx:id="userId" layoutX="857.0" layoutY="125.0" prefHeight="21.0" prefWidth="100.0" text="C001" />
+      <Label layoutX="660.0" layoutY="162.0" prefHeight="21.0" prefWidth="75.0" text="First Name" />
+      <Label layoutX="661.0" layoutY="283.0" prefHeight="21.0" prefWidth="91.0" text="Date Of Birth" />
+      <Label layoutX="660.0" layoutY="238.0" prefHeight="21.0" prefWidth="75.0" text="Email" />
+      <Label layoutX="660.0" layoutY="320.0" prefHeight="21.0" prefWidth="59.0" text="Gen" />
+      <TextField fx:id="fnm" layoutX="819.0" layoutY="157.0" prefHeight="31.0" prefWidth="187.0" promptText="Full Name" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <TextField fx:id="txtUEmail" layoutX="819.0" layoutY="233.0" promptText="Email" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <TextField fx:id="txtUserName" layoutX="816.0" layoutY="355.0" prefHeight="21.0" prefWidth="187.0" promptText="UserName" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <JFXButton layoutX="764.0" layoutY="488.0" onAction="#btnUpdate" opacity="0.5" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: green;" stylesheets="@../styles/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <styleClass>
+            <String fx:value="edge-button" />
+            <String fx:value="edge-button" />
+         </styleClass>
+      </JFXButton>
+      <JFXButton layoutX="636.0" layoutY="488.0" onAction="#btnUserSave" opacity="0.51" prefHeight="31.0" prefWidth="99.0" style="-fx-background-color: Blue;" styleClass="edge-button" stylesheets="@../styles/style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="660.0" layoutY="443.0" prefHeight="21.0" prefWidth="124.0" text="Re-enter Password" />
+      <Label layoutX="660.0" layoutY="405.0" prefHeight="21.0" prefWidth="75.0" text="Password" />
+      <Label layoutX="661.0" layoutY="360.0" prefHeight="21.0" prefWidth="90.0" text="User Name" />
+      <DatePicker fx:id="Dob" layoutX="818.0" layoutY="278.0" prefHeight="31.0" prefWidth="177.0" />
+      <Label layoutX="660.0" layoutY="200.0" prefHeight="21.0" prefWidth="75.0" text="Last Name" />
+      <TextField fx:id="lnm" layoutX="816.0" layoutY="195.0" prefHeight="31.0" prefWidth="187.0" promptText="Full Name" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <HBox layoutX="824.0" layoutY="315.0" prefHeight="31.0" prefWidth="177.0" spacing="13.0">
+         <children>
+            <JFXRadioButton fx:id="radMale" selected="true" text="Male">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gen" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton alignment="CENTER_RIGHT" text="Female" toggleGroup="$Gen" />
+         </children>
+      </HBox>
+      <PasswordField fx:id="txtPassword" layoutX="813.0" layoutY="400.0" prefHeight="21.0" prefWidth="187.0" promptText="Enter Your Password " styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <PasswordField fx:id="rpw" layoutX="814.0" layoutY="438.0" prefHeight="31.0" prefWidth="186.0" promptText="Re-enter Password" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <JFXButton layoutX="888.0" layoutY="488.0" onAction="#btnclear" opacity="0.53" prefHeight="21.0" prefWidth="99.0" style="-fx-background-color: orange;" styleClass="edge-button" stylesheets="@../styles/style.css" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField layoutX="651.0" layoutY="81.0" />
+      <Button layoutX="848.0" layoutY="81.0" mnemonicParsing="false" opacity="0.55" prefHeight="21.0" prefWidth="152.0" style="-fx-background-color: green;" styleClass="edge-button" stylesheets="@../styles/style.css" text="Search" textFill="WHITE" />
+   </children>
+</AnchorPane>

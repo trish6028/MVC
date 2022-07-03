@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PetOwnerUpdatenDeleteFormController">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="1067.0" styleClass="linear-Colour" stylesheets="@../styles/style.css" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="237.0" layoutY="-5.0" prefHeight="68.0" prefWidth="588.0" text="Pet Owner" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="42.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="99.0" layoutY="98.0" prefHeight="63.0" prefWidth="369.0" text="Pet Owner Update &amp; Delete" underline="true">
+         <font>
+            <Font name="Ebrima Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="245.0" prefHeight="26.0" prefWidth="279.0" text="Pet Owner Register Number">
+         <font>
+            <Font name="High Tower Text" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="363.0" prefHeight="26.0" prefWidth="177.0" text="Pet Owner Name">
+         <font>
+            <Font name="High Tower Text" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="483.0" prefHeight="26.0" prefWidth="164.0" text="Contact Number">
+         <font>
+            <Font name="High Tower Text" size="21.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnUnD" layoutX="551.0" layoutY="645.0" onAction="#btnOnerDelete" opacity="0.75" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: #eb4d4b;" styleClass="edge-button" stylesheets="@../styles/style.css" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="cmbOwnerId" layoutX="386.0" layoutY="241.0" prefHeight="31.0" prefWidth="317.0" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <JFXButton layoutX="88.0" layoutY="645.0" onAction="#btnOwnerUpdate" opacity="0.68" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: Green;" styleClass="edge-button" stylesheets="@../styles/style.css" text="update " textFill="WHITE">
+         <font>
+            <Font name="Kristen ITC" size="15.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtOwnerName" layoutX="393.0" layoutY="359.0" prefHeight="31.0" prefWidth="317.0" styleClass="edge-button" stylesheets="@../styles/style.css" />
+      <TextField fx:id="Contacttxt" layoutX="393.0" layoutY="479.0" prefHeight="31.0" prefWidth="317.0" styleClass="edge-button" stylesheets="@../styles/style.css" />
+   </children>
+</AnchorPane>
